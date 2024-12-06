@@ -1,16 +1,16 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: {{ .Values.appName }}
+  name: nginx-route-21018
   labels:
-    app: {{ .Values.appName }}
+    app: nginx-deployment-21018
     environment: dev
 spec:
-  host: webapp-21018-route-webapp.apps.lab.okd.local
+  host: nginx-route-21018-webapp.local
   to:
     kind: Service
-    name: {{ .Values.appName }}
+    name: nginx-service-21018
     weight: 100
   port:
-    targetPort: flask
+    targetPort: http
   wildcardPolicy: None
