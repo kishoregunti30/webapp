@@ -18,7 +18,7 @@ spec:
     spec: # Pod spec
       containers:
       - name: nginx-container-21018
-        image: nginx:1.21
+        image: nginx:1.22
         volumeMounts:
         - mountPath: /etc/nginx/conf.d/
           name: nginx-dir
