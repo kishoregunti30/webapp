@@ -17,13 +17,14 @@ spec:
         tier: frontend
     spec: # Pod spec
       containers:
-      - name: mycontainer-21018
+      - name: nginx-container-21018
         image: nginx:1.21
                 ports:
         - containerPort: 80
         envFrom:
         - configMapRef:
             name: {{ .Values.configmap.name }}
+            key: welcome_msg
         resources:
           requests:
             memory: "16Mi" 
