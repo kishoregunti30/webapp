@@ -24,7 +24,6 @@ spec:
         envFrom:
         - configMapRef:
             name: {{ .Values.configmap.name }}
-            key: welcome_msg
         resources:
           requests:
             memory: "16Mi" 
