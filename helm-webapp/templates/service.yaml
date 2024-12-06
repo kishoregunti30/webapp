@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nginx-service-21018
 spec:
-  type: ClusterIp
+  type: ClusterIP
   selector:
     app: nginx-deployment-21018
   ports:
