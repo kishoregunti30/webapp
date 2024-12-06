@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: RoleBinding
+metadata:
+  name: nginx-rolebinding-21018
+roleRef:
+  name: nginx-role-21018
+  kind: Role
+subjects:
+- kind: ServiceAccount
+  name: nginx-sa-21018
+  namespace: default
