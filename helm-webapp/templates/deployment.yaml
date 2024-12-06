@@ -32,7 +32,6 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "100m"
-nginx/html
     volumes:
     - name: nginx-pvc-21018
       persistentVolumeClaim:
