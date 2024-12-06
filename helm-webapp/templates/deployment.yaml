@@ -35,3 +35,9 @@ spec:
       - name: nginx-pvc-21018
         persistentVolumeClaim:
           claimName: nginx-pvc-21018
+      - name: nginx-dir
+        emptyDir: { }
+      - name: nginx-empty
+        emptyDir: { }
+      - name: nginx-run
+        emptyDir: { }
